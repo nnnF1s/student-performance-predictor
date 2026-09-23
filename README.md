@@ -23,7 +23,7 @@ The models were evaluated using Root Mean Squared Error (RMSE), Mean Absolute Er
 
 ## Streamlit Application
 * https://student-performance-predictor-9ebcq7kuvt5moka4esqfhb.streamlit.app/
-The interactive web application (`app.py`) allows users to input student parameters via dynamic sidebar sliders and dropdowns. It provides:
+* The interactive web application (`app.py`) allows users to input student parameters via dynamic sidebar sliders and dropdowns. It provides:
 *   Real-time final score predictions.
 *   Actionable performance feedback (High Performance, Average, At-Risk).
 *   An interactive Plotly bar chart displaying the key study habits driving the score prediction.
