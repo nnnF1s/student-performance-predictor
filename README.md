@@ -1,4 +1,4 @@
-# 🎓 Student Performance Predictor
+#  Student Performance Predictor
 
 ## Project Overview
 This project is a complete, working machine learning portfolio project built for the Women Innovating in Cloud Africa (WIICA) program. It features an end-to-end data pipeline, model training, and a live Streamlit web dashboard.
