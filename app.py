@@ -7,7 +7,7 @@ import plotly.express as px
 # 1. Page Configuration
 st.set_page_config(
     page_title="Student Performance Predictor",
-    page_icon="🎓",
+    page_icon="",
     layout="centered"
 )
 
@@ -26,7 +26,7 @@ st.markdown("Welcome to the WIICA Machine Learning Capstone Project! Use the con
 st.markdown("---")
 
 # 4. Sidebar Inputs (User Controls)
-st.sidebar.header("📊 Student Parameters")
+st.sidebar.header("Student Parameters")
 
 def user_input_features():
     hours_studied = st.sidebar.slider("Hours Studied (Weekly)", 1, 44, 15)
@@ -76,11 +76,11 @@ def user_input_features():
 df_input = user_input_features()
 
 # 5. Main Dashboard Display
-st.subheader("📋 Current Student Profile")
+st.subheader("Current Student Profile")
 st.write(df_input)
 
 # 6. Prediction Logic
-if st.button("🚀 Predict Final Exam Score", type="primary"):
+if st.button("Predict Final Exam Score", type="primary"):
     try:
         numerical_cols = ['Hours_Studied', 'Attendance', 'Sleep_Hours', 'Previous_Scores', 'Tutoring_Sessions', 'Physical_Activity']
         categorical_cols = [col for col in df_input.columns if col not in numerical_cols]
@@ -108,7 +108,7 @@ if st.button("🚀 Predict Final Exam Score", type="primary"):
 
         # --- NEW: Analytics / Plotly Feature Impact Chart ---
         st.markdown("---")
-        st.subheader("📊 Key Study Habits Driving Predictions")
+        st.subheader("Key Study Habits Driving Predictions")
         st.caption("This chart displays the top features influencing the Linear Regression model's predictions.")
 
         if hasattr(model, "coef_") and hasattr(model, "feature_names_in_"):
@@ -137,7 +137,7 @@ if st.button("🚀 Predict Final Exam Score", type="primary"):
 
 # 7. About the App section
 st.markdown("---")
-st.markdown("### ℹ️ About the Model")
+st.markdown("### About the Model")
 st.markdown("""
 - **Algorithm:** Linear Regression (Chosen over Random Forest due to higher R² and lower MAE).
 - **Key Drivers:** Attendance percentage and weekly hours studied have the strongest positive impact on scores.
