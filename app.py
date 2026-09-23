@@ -21,7 +21,7 @@ def load_artifacts():
 model, scaler = load_artifacts()
 
 # 3. App Header
-st.title("🎓 Student Performance Predictor")
+st.title("Student Performance Predictor")
 st.markdown("Welcome to the WIICA Machine Learning Capstone Project! Use the controls below to enter student habits and predict their final exam score.")
 st.markdown("---")
 
