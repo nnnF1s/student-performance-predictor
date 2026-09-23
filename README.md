@@ -22,7 +22,7 @@ The models were evaluated using Root Mean Squared Error (RMSE), Mean Absolute Er
 *   *Linear Regression was selected as the final model due to its superior ability to capture the straightforward linear relationships in the dataset.*
 
 ## Streamlit Application
-https://student-performance-predictor-9ebcq7kuvt5moka4esqfhb.streamlit.app/
+* https://student-performance-predictor-9ebcq7kuvt5moka4esqfhb.streamlit.app/
 The interactive web application (`app.py`) allows users to input student parameters via dynamic sidebar sliders and dropdowns. It provides:
 *   Real-time final score predictions.
 *   Actionable performance feedback (High Performance, Average, At-Risk).
